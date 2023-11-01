@@ -9,14 +9,14 @@
 body {
     text-align: center;
     font-family: sans-serif;
-   
+    overflow-x: hidden;
 }
 
 .superior {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 101px;
     background: rgb(86, 189, 54);
     position: fixed;
     width: 100%;
@@ -25,7 +25,7 @@ body {
 
 .barra {
     display: flex;
-    margin-right: 0px;
+    margin-right: 80px;
 }
 
 .nombre a {
@@ -48,7 +48,7 @@ body {
 
 .barra a{
     display: block;
-    padding: 7% 20px;
+    padding: 10% 40px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -59,6 +59,8 @@ body {
 
 .barra a:hover {
     background: rgb(172, 172, 172);
+    height: 35px;
+    
 }
 
 .header {
@@ -117,7 +119,6 @@ p{
 .servicios{
     padding: 150px;
     background:rgb(86, 189, 54);
-    
 }
     
 .box-container {
@@ -219,16 +220,15 @@ p{
 .my-float{
 	margin-top:16px;
 }
-.show {
-    z-index: 10;
-
-}
-
-
 
  .loogo {
     position: relative; 
     top: -300px; left: 700px;
  }
 
- 
+ #verMas {
+    background-color: rgb(86, 189, 54);
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+  }

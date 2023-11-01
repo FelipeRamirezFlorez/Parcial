@@ -1,0 +1,27 @@
+/* modal.css */
+#Modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    font-family: cursive;
+  }
+  
+  .modal-content {
+    background-color: #ececec;
+    margin: 15% auto;
+    padding: 10px;
+    border: 4px solid #111010;
+    width: 600px;
+    height: 150px;
+    border-radius: 30px;
+  }
+
+  #verMas{
+    width: 70%;
+  }
