@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial_1</title>
     <script src="https://kit.fontawesome.com/1b4072003b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Style.css"> 
-    <link rel="stylesheet" href="css/whatsapp.css">
+    <link rel="stylesheet" href="Modal.Css">
+    <script src="Modal.Js"></script>
 </head>
 <body>
 
@@ -27,15 +27,22 @@
 
         <div class="barra">
             <a href="#home">Home</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#colaboradores">Colaboradores</a>
+            <button id="verMas">VER MAS</button> 
+            <a href="#servicios" id="servicio" style="display: none;">Servicios</a>
+            <a href="#colaboradores" id="colaborador" style="display: none;">Colaboradores</a>
             <a href="#copi"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
     </div>
-    <header class="header"> 
-       
+    
+    <header class="header" id="header">
+
     </header>
 
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
 
    
 
@@ -49,8 +56,9 @@
         
     </section>
     
-    <section id="servicios" class="servicios"> 
+    <section id="servicios" class="servicios" style="display: none;"> 
         <h2 class="title">Servicios</h2>
+        <div></div>
 
         <div class="box-container">
             <div class="box">
@@ -84,7 +92,7 @@
         </div>
     </section>
 
-    <section id="colaboradores" class="colaboradores"> 
+    <section id="colaboradores" class="colaboradores" style="display: none;"> 
         <h2 class="title">Colaboradores</h2>
 
         <div class="contenedor-dos">
@@ -115,6 +123,14 @@
             </button>
           </div></a></a>
 
+          
     </section>
+</header>
+    <script src="Modal.Js"></script>
+    <script type="module">
+        import { showModal } from './Modal.Js';
+        
+        document.getElementById('verMas').addEventListener('click', showModal);
+        </script>
 </body>
 </html>
